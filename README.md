@@ -1,3 +1,3 @@
-<h2> Landing Page </h2>
+## Landing Page ##
 A landing page made with HTML, CSS and Bootstrap.
 
