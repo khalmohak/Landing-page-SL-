@@ -10,6 +10,21 @@ body {
   background: #03192e;
 }
 
+/* Sticky navbar Properties  */
+.navbar-dropdown.navbar-fixed-top {
+  position: fixed;
+}
+
+.navbar-dropdown {
+  left: 0;
+  padding: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.45s ease;
+  z-index: 100;
+}
+
 /* Header Parallax Element Style*/
 .paral {
   min-height: 600px;
