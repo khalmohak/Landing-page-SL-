@@ -1,0 +1,87 @@
+﻿.jumbotron {
+  margin-bottom: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #03192e;
+}
+
+/* Header Parallax Element Style*/
+.paral {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Paragraph for Parallax Section */
+.paral p {
+  font-size: 1.5em;
+  color: #f5f5f5;
+  text-align: left;
+  /* line-height: 60px; */
+}
+
+/* Heading for Parallax Section */
+.paral h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+  text-align: left;
+  padding-top: 60px;
+  line-height: 100px;
+}
+
+/* Image for Parallax Section */
+.paralsec {
+  background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");
+  height: 100px;
+}
+
+/* .paralsec1 {
+            background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");
+        }
+
+        .paralsec2 {
+            background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+        } */
+
+/* Promotion area        */
+#promotion-area {
+  width: 100%;
+  height: 310px;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  /* padding: 40px; */
+  align-items: center;
+  padding-top: 40px;
+  overflow: hidden;
+  background: whitesmoke;
+}
+
+/* Promotion image styling */
+.promotion-img {
+  height: 130px;
+  width: 130px;
+  border-radius: 100px;
+  align-self: center;
+  border: 1px solid black;
+}
+
+/* All sections Image styling */
+.info-img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+/* Join the community sectiom */
+.join {
+  background: rgb(201, 212, 212);
+  /* background-color: #37474f; */
+}
