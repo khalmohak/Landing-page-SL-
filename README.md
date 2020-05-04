@@ -1,3 +1,3 @@
 ## Landing Page ##
-A landing page made with HTML, CSS and Bootstrap.
+A landing page made with Bootstrap and JS.
 
