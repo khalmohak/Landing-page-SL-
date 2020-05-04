@@ -20,7 +20,7 @@
 }
 
 .wraper{
-	padding: 4% 4% 4% 4%;
+	padding: 4% 4% 0% 4%;
 	width: 100%;
 }
 .wraper-grey{
@@ -48,8 +48,11 @@
 	background-color: white;
 	display: none;
 	 box-shadow: 0 4px 8px 0 white;
-	 max-width: 330px;
+	 max-width: 350px;
+	 min-width: 300px;
+	 margin-top: 30px;
 	 margin: auto;
+	 margin-top: 50px;
      padding: 10px 10px;
 	}
 
@@ -74,13 +77,25 @@
 .testimon{
 	background-color: grey;
 	display: block;
-	width: 400px;
+	width: 300px;
+	min-width: 300px;
 	height: 250px;
-	 box-shadow: 0px 4px 8px 0px white;
-	 max-width: 330px;
-	 margin: auto;
+	box-shadow: 0px 4px 8px 0px white;
+	margin: auto;
+	margin-top: 50px;
 
 }
 .topMargin{
 	margin-top: 100px;
+}
+
+.inline{
+	display: inline-block;
+}
+
+.buttonClass{
+	width: 100%;
+	z-index: 100;
+	margin-top: 200px;
+	position: absolute;
 }
