@@ -1,10 +1,15 @@
-// var started = document.getElementById("getStarted");
+// var started = document.getElementById("navbarSupportedContent");
 
-// function inputParallax() {
-//   started.style.border = "none";
-//   started.style.borderBottom = "1px solid red";
+// function display() {
+//   started.style.display = "none";
 // }
 
 // function inputParallaxBlur() {
 //   started.style.borderBottom = "1px solid white";
 // }
+document.addEventListener("click", function(event) {
+  // If user clicks inside the element
+  if (event.target.closest(".side-nav")) {
+    $(".side-nav").removeClass("open");
+  }
+});
