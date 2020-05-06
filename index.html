@@ -7,16 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Social Likers</title>
 
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-------dipanshu----->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="divstylesheet.css">
 
-    <!------------------->
 
 
     <!-- <link rel="stylesheet" href="parallax.css"> -->
@@ -27,7 +31,7 @@
 
 </head>
 
-<body>
+<body style="margin: 0px;padding: 0px;">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top navbar-dropdown">
         <a class="navbar-brand" href="#">Quantel</a>
@@ -37,7 +41,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav side-nav mr-auto">
+            <ul class="navbar-nav ml-auto mr-1" id="check">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#navbarDropdown1" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,16 +79,10 @@
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-            </form>
             <form class="form-inline p-1">
-                <button class="btn btn-outline-success " type="button">Sign in</button>
+                <button class="btn btn-outline-success" type="button"> Request Invite</button>
             </form>
-            <form class="form-inline p-1">
-                <button class="btn btn-outline-success" type="button">Sign up</button>
-            </form>
+
         </div>
     </nav>
     <!-- Navbar ends -->
@@ -93,26 +91,81 @@
 
 
     <!-- Info about Quantel -->
-    <div class="jumbotron paral paralsec">
-        <h1 class="display-3">Quantel</h1>
-        <p class="lead" id="info">A student networking and Information Sharing <br> platform
-            to empower college students to increase <br> their outreach.</p>
+    <!-- <div class="jumbotron paral paralsec">
+        <h1 class="display-3 ml-5">Quantel</h1>
+        <p class="lead ml-5 mt-3" id="info"> &nbsp &nbsp Think, Create, Innovate..</p>
+        <button class="btn my-2 btn-success" id="request" type="submit"> Request Invite </button> -->
 
-        <form class="form-inline my-2 my-lg-0">
+
+    <div class="jumbotron paral paralsec">
+        <div class="front pt-5">
+            <p class="lead ml-5" id="info"> <span>Quantel</span> presents</p>
+            <h1 class="display-3 p-0 mt-0 ml-5" id="heading">Virtual Internship Program</h1>
+            <p class="lead ml-5"> &nbsp A first of its kind initiative to help college
+                students looking for internship
+                opportunities.</p>
+        </div>
+        <!-- <p class="ml-5" id="explore-para">Explore our Virtual <br> Internship Program</p> -->
+        <div id="explore">
+            <p class="ml-5" id="explore-para">Explore our Virtual <br> Internship Program</p>
+
+            <a href="#box-target" id="explore">
+                <!-- <p class="ml-5" id="explore-para">Explore our Virtual <br> Internship Program</p> -->
+                <!-- Explore our Virtual <br> Internship Program  -->
+                <div class="box ml-5">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+
+
+
+        <!-- <button class="btn my-2 btn-success" type="submit"> Request Invite </button> -->
+
+
+
+
+
+
+        <!-- <div class="container-fluid d-none d-md-block">
+            <div class="row">
+                <div id="promotion-area">
+                    <div class="promotions col-md-2 text-center">
+                        <img src="https://img.webnots.com/2017/05/parallax1.jpg" alt="" class="promotion-img">
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div class="promotions text-center col-md-2">
+                        <img src="https://img.webnots.com/2017/05/parallax1.jpg" alt="" class="promotion-img">
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div class="promotions text-center col-md-2">
+                        <img src="https://img.webnots.com/2017/05/parallax1.jpg" alt="" class="promotion-img">
+                        <p>Lorem, ipsum.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+
+        <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="Enter your Email" id="getStarted" placeholder="Search"
                 aria-label="Search">
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit"> Get started </button>
-            <!-- <a class="btn btn-info btn-lg btn-md" href="#" role="button">Get Started</a> -->
+            <a class="btn btn-info btn-lg btn-md" href="#" role="button">Get Started</a>
         </form>
-        </p>
+        </p> -->
     </div>
     <!-- Info ends -->
 
 
-
-
     <!-- Promotions -->
-    <div class="container-fluid d-none d-md-block">
+    <!-- <div class="container-fluid d-none d-md-block">
         <div class="row">
             <div id="promotion-area">
                 <div class="promotions col-md-2 text-center">
@@ -137,21 +190,96 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Promotion ends -->
+
+
+    <div class="wrapper pt-5" id="box-target">
+        <h1 class="text-center mb-5 text-light">Our Virtual Internship Program</h1>
+
+        <ul class="stage clearfix">
+
+            <li class="scene">
+                <div class="movie" onclick="return true">
+                    <div class="poster"></div>
+                    <div class="info">
+                        <header>
+                            <h1>It's a Wonderful Life</h1>
+                            <span class="year">1946</span>
+                            <span class="rating">PG</span>
+                            <span class="duration">130 minutes</span>
+                        </header>
+                        <p>
+                            In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers
+                            for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second
+                            Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin
+                            and Joseph, the head angels, review George's life with Clarence.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="scene">
+                <div class="movie" onclick="return true">
+                    <div class="poster"></div>
+                    <div class="info">
+                        <header>
+                            <h1>Vengeance Valley</h1>
+                            <span class="year">1951</span>
+                            <span class="rating">NR</span>
+                            <span class="duration">83 minutes</span>
+                        </header>
+                        <p>
+                            A cattle baron takes in an orphaned boy and raises him, causing his own son to resent
+                            the boy. As they get older the resentment festers into hatred, and eventually the real
+                            son frames his stepbrother for fathering an illegitimate child that is actually his,
+                            seeing it as an opportunity to get his half-brother out of the way so he can have his
+                            father's empire all to himself.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="scene">
+                <div class="movie" onclick="return true">
+                    <div class="poster"></div>
+                    <div class="info">
+                        <header>
+                            <h1>The Gold Rush</h1>
+                            <span class="year">1925</span>
+                            <span class="rating">NR</span>
+                            <span class="duration">95 minutes</span>
+                        </header>
+                        <p>
+                            The Tramp travels to the Yukon to take part in the Klondike Gold Rush. He gets mixed up
+                            with some burly characters and falls in love with the beautiful Georgia. He tries to win
+                            her heart with his singular charm.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div><!-- /wrapper -->
+    </div><!-- /container -->
+
+
+
+
 
 
 
 
     <!-- Startups -->
-    <div class="container">
+    <div class="container m-0">
         <div class="row mt-5 mb-5">
             <div class="col-lg-6 p-1 text-center">
                 <img class="info-img" src="img1.jpg" alt="Generic placeholder image">
             </div>
             <div class="col-lg-6 text-center text-light p-1">
                 <h5 class="mt-0"> Startups </h5>
-                <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                    Cras
                     purus
                     odio,
                     vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
@@ -170,7 +298,8 @@
         <div class="row mt-5 mb-5">
             <div class="col-lg-6 text-center text-light mt-5 p-1">
                 <h5 class="mt-0"> Internships</h5>
-                <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                    Cras
                     purus
                     odio,
                     vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
@@ -211,11 +340,10 @@
     <!-- Community section end -->
 
 
-    <!-----------------------------Dipanshu------------------------------------------------------->
     <div class="wraper">
         <div class="row">
             <div class=" col white-font">
-                <h1 align="left">Trending
+                <h1>Trending
                     <a href="https://www.clipart.email/download/6478290.html" title="Image from clipart.email"><img
                             src="https://cdn.clipart.email/047d28eb456f02f5fe1789c20a64c139_pattern-background-clipart-market-text-orange-transparent-_900-520.jpeg"
                             width="50" alt="Clipart Logo Stock Market" /></a>
@@ -237,7 +365,9 @@
             <span class="badgePosition badge badge-warning m-2 float"> Date: 10/10/2020</span>
             <h3> Surajmal College </h3>
             <p>This is an open mic event for singers and musicians .The best platform for New and Upcoming Youth
-                Musician . We promise you the quality. It will be the best choice to meet with the people with the same
+                Musician . We promise you the quality. It will be the best choice to meet with the people with
+                the
+                same
                 passion and dedication like you. Come to make your Sunday a beautiful and memorable one.
             </p>
         </div>
@@ -250,7 +380,9 @@
             <h3>Surajmal College
             </h3>
             <p>This is an open mic event for singers and musicians .The best platform for New and Upcoming Youth
-                Musician . We promise you the quality. It will be the best choice to meet with the people with the same
+                Musician . We promise you the quality. It will be the best choice to meet with the people with
+                the
+                same
                 passion and dedication like you. Come to make your Sunday a beautiful and memorable one.
             </p>
         </div>
@@ -260,7 +392,9 @@
             <span class="badgePosition badge badge-warning m-2 float"> Date: 10/10/2020</span>
             <h3>Sjmal College</h3>
             <p>This is an open mic event for singers and musicians .The best platform for New and Upcoming Youth
-                Musician . We promise you the quality. It will be the best choice to meet with the people with the same
+                Musician . We promise you the quality. It will be the best choice to meet with the people with
+                the
+                same
                 passion and dedication like you. Come to make your Sunday a beautiful and memorable one.
             </p>
         </div>
@@ -271,7 +405,9 @@
             <span class="badgePosition badge badge-warning m-2 float"> Date: 10/10/2020</span>
             <h3>Sural College</h3>
             <p>This is an open mic event for singers and musicians .The best platform for New and Upcoming Youth
-                Musician . We promise you the quality. It will be the best choice to meet with the people with the same
+                Musician . We promise you the quality. It will be the best choice to meet with the people with
+                the
+                same
                 passion and dedication like you. Come to make your Sunday a beautiful and memorable one.
             </p>
 
@@ -283,7 +419,9 @@
             <span class="badgePosition badge badge-warning m-2 float"> Date: 10/10/2020</span>
             <h3>dav College</h3>
             <p>This is an open mic event for singers and musicians .The best platform for New and Upcoming Youth
-                Musician . We promise you the quality. It will be the best choice to meet with the people with the same
+                Musician . We promise you the quality. It will be the best choice to meet with the people with
+                the
+                same
                 passion and dedication like you. Come to make your Sunday a beautiful and memorable one.
             </p>
 
@@ -295,7 +433,9 @@
             <span class="badgePosition badge badge-warning m-2 float"> Date: 10/10/2020</span>
             <h3>hans College</h3>
             <p>This is an open mic event for singers and musicians .The best platform for New and Upcoming Youth
-                Musician . We promise you the quality. It will be the best choice to meet with the people with the same
+                Musician . We promise you the quality. It will be the best choice to meet with the people with
+                the
+                same
                 passion and dedication like you. Come to make your Sunday a beautiful and memorable one.
             </p>
 
@@ -323,19 +463,31 @@
 
         <div class="row">
             <div class="col white-font">
-                is an open mic event for singers and musicians .The best platform for New and Upcoming Youth Musician .
-                We promise you the quality. It will be the best choice to meet with the people with the same passion and
-                dedication like you. Come to make your Sunday a beautiful and memorable one.is an open mic event for
-                singers and musicians .The best platform for New and Upcoming Youth Musician . We promise you the
-                quality. It will be the best choice to meet with the people with the same passion and dedication like
+                is an open mic event for singers and musicians .The best platform for New and Upcoming Youth
+                Musician .
+                We promise you the quality. It will be the best choice to meet with the people with the same
+                passion
+                and
+                dedication like you. Come to make your Sunday a beautiful and memorable one.is an open mic event
+                for
+                singers and musicians .The best platform for New and Upcoming Youth Musician . We promise you
+                the
+                quality. It will be the best choice to meet with the people with the same passion and dedication
+                like
                 you. Come to make your Sunday a beautiful and memorable one
             </div>
             <div class="col white-bg">
-                is an open mic event for singers and musicians .The best platform for New and Upcoming Youth Musician .
-                We promise you the quality. It will be the best choice to meet with the people with the same passion and
-                dedication like you. Come to make your Sunday a beautiful and memorable one.is an open mic event for
-                singers and musicians .The best platform for New and Upcoming Youth Musician . We promise you the
-                quality. It will be the best choice to meet with the people with the same passion and dedication like
+                is an open mic event for singers and musicians .The best platform for New and Upcoming Youth
+                Musician .
+                We promise you the quality. It will be the best choice to meet with the people with the same
+                passion
+                and
+                dedication like you. Come to make your Sunday a beautiful and memorable one.is an open mic event
+                for
+                singers and musicians .The best platform for New and Upcoming Youth Musician . We promise you
+                the
+                quality. It will be the best choice to meet with the people with the same passion and dedication
+                like
                 you. Come to make your Sunday a beautiful and memorable one
             </div>
         </div>
@@ -365,11 +517,11 @@
         </div>
     </div>
 
-</div>
-</div>
-<!--=============================Mohak Start================================-->
-<section id="footer">
-        <div class="row pt-4">
+    <!-- </div>
+</div> -->
+    <!--=============================Mohak Start================================-->
+    <section id="footer" class="bg-dark">
+        <div class="row pt-4 m-0">
             <div class="col-sm-6 text-center">
                 <div class="container text-white d-flex justify-content-start" style="font-size: 40px;">
                     <i class="fab fa-facebook p-2"></i>
@@ -378,7 +530,8 @@
                     <i class="fab fa-linkedin-in p-2"></i>
                     <i class="fab fa-youtube p-2"></i>
                 </div>
-                <h5 class="d-flex justify-content-start px-4 text-white">Mail us at <a href="mailto:hello@quantel.in subject:Enquiry"> &nbsp;hello@quantel.in</a></h5>
+                <h5 class="d-flex justify-content-start px-4 text-white">Mail us at <a
+                        href="mailto:hello@quantel.in subject:Enquiry"> &nbsp;hello@quantel.in</a></h5>
                 <div class="row text-white pt-3">
                     <div class="col-sm-4 d-flex flex-column">
                         <h3 style="text-decoration: underline;">Quicklinks</h3>
@@ -399,7 +552,7 @@
                         <a href="">Work with us</a>
                     </div>
                 </div>
-            
+
             </div>
             <div class="col-sm-6 text-center text-white">
                 <h3 class="pb-2">Contact Us</h3>
@@ -412,16 +565,17 @@
                             <input type="email" class="form-control" placeholder="Email" style="width: 400px;">
                         </div>
                         <div class="form-group d-flex justify-content-center">
-                            <textarea name="" id="" cols="30" style="width: 400px;" rows="3" class="form-control" placeholder="Feedback/Enquiry"></textarea>
-    
+                            <textarea name="" id="" cols="30" style="width: 400px;" rows="3" class="form-control"
+                                placeholder="Feedback/Enquiry"></textarea>
+
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button class="btn btn-lg btn-light " type="submit"style="width: 400px;">Submit</button>
+                            <button class="btn btn-lg btn-light " type="submit" style="width: 400px;">Submit</button>
                         </div>
-                        
+
                     </div>
-                    
-                    
+
+
 
                 </form>
 
@@ -432,26 +586,29 @@
 
 
         </div>
-        <hr style="height:30px"> 
-        
+        <hr style="height:30px">
+
 
 
 
         <div class="container align-centre text-centre text-white">
             <div class="row mt-2">
-                <h3 style="font-size:large;" class="col-3 align-self-start px-6 mx-6">© 2020 Quantel Tech. Pvt. Ltd.</h3>
-                <h3 style="font-size:large;" class="col-3 offset-6 align-self-start px-6 mx-6">Made with <i class="fas fa-heart"></i> in India</h3>
+                <h3 style="font-size:large;" class="col-3 align-self-start px-6 mx-6">© 2020 Quantel Tech. Pvt.
+                    Ltd.
+                </h3>
+                <h3 style="font-size:large;" class="col-3 offset-6 align-self-start px-6 mx-6">Made with <i
+                        class="fas fa-heart"></i> in India</h3>
             </div>
-             
+
         </div>
 
 
 
 
     </section>
-    
-    
-<!--=============================Mohak End================================-->
+
+
+    <!--=============================Mohak End================================-->
 
 
 
